@@ -11,4 +11,5 @@
 
 <img src="https://user-images.githubusercontent.com/104135647/197241190-52a0d1a5-ab75-417b-88fd-1a54eb26c925.jpg" width="333" height="333"> <img src="https://user-images.githubusercontent.com/104135647/197240473-13583bc5-dda3-44d1-ab01-6f986737b229.jpeg" width="333" height="333"> <img src="https://user-images.githubusercontent.com/104135647/197240777-c0a198ea-5549-4456-9f9e-2aa47603fa1a.jpeg" width="333" height="333">
 
-##### In order to make this work you have to fill the photos directory with your input pictures 
+##### In order to make this work you have to fill the photos directory with your input pictures
+##### it is already prefilled with random pictures close to greyscale 1 and greyscale 0 in order to tackle corner cases
