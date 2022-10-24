@@ -404,7 +404,8 @@ def subdivideImageActualTransformation(filename, dir_in, dir_out, d, pictureArra
                     
             img.crop(box).save(out)
             colorVal = analyseImageReturnValueBetweenZeroAndOne(out)
-
+            #this will remove each generated image from the results directory
+            os.remove(out)
             
             result = appendImageToFinalArray(pictureArray,imgListOne,colorVal)
             pictureArray = result[0]
