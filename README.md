@@ -1,6 +1,6 @@
 # Digiatal-Mosaic-Art
 ## This is a program that creates a mosaic style image.
-#### The way it works is as follows: you add at least 500 photos to the photos arrange from which afterwards the mosaic image is built. Then you select in the program a portrait in (. JPG) which you want to reproduce. Also, in some places you have to enter the dimensions of the portrait (square) and set the resolution. Unfortunately, the creation of these images still requires a relatively large amount of memory.
+#### The way it works is as follows: you add at least 500 images(. JPG) to the photos directory from which afterwards the mosaic image is built. Then you select in the program a portrait in (. JPG) which you want to reproduce. Also, in some places you have to enter the dimensions of the portrait (square) and set the resolution. Unfortunately, the creation of these images still requires a relatively large amount of memory.
 
 ## this is an example of gerge cloony
 
