@@ -215,76 +215,6 @@ def makeDirectoryOfInputPictures(fromDirectory):
 
     imgFolders = sortInputPicturesIntoDirecoty(fromDirectory,imgFolders)
 
-    '''
-    path_of_directory = fromDirectory
-    ext = ('jpg')
-    
-
-
-    for files in os.listdir(path_of_directory):
-                if files.endswith(ext):
-                    greyVal = analyseImageReturnValueBetweenZeroAndOne(os.path.join(path_of_directory,files))
-                    if(greyVal <=  0.05):
-                        array1.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.05 and greyVal <= 0.1):
-                        array2.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.1 and greyVal <= 0.15):
-                        array3.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.15 and greyVal <= 0.2):
-                        array4.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.2 and greyVal <= 0.25):
-                        array5.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.25 and greyVal <= 0.3):
-                        array6.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.3 and greyVal <= 0.35):
-                        array7.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.35 and greyVal <= 0.4):
-                        array8.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.4 and greyVal <= 0.45):
-                        array9.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.45 and greyVal <= 0.5):
-                        array10.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.5 and greyVal <= 0.55):
-                        array11.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.55 and greyVal <= 0.6):
-                        array12.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.6 and greyVal <= 0.65):
-                        array13.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.65 and greyVal <= 0.7):
-                        array14.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.7 and greyVal <= 0.75):
-                        array15.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.75 and greyVal <= 0.8):
-                        array16.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.8 and greyVal <= 0.85):
-                        array17.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.85 and greyVal <= 0.9):
-                        array18.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.9 and greyVal <= 0.95):
-                        array19.append(os.path.join(path_of_directory,files))
-                        continue
-                    if(greyVal > 0.95 and greyVal <= 0.1):
-                        array20.append(os.path.join(path_of_directory,files))
-                        continue
-    ''' 
         
     print(imgFolders)    
     print("array1")
@@ -403,6 +333,8 @@ def subdivideImageActualTransformation(filename, dir_in, dir_out, d, pictureArra
             out = os.path.join(dir_out, f'{name}{i}{j}{ext}')
                     
             img.crop(box).save(out)
+            # with this line you can try to optimise the memory use 
+            #img.crop(box).resize([3,3]).save(out)
             colorVal = analyseImageReturnValueBetweenZeroAndOne(out)
             #this will remove each generated image from the results directory
             os.remove(out)
