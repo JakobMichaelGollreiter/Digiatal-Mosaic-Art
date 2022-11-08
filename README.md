@@ -4,7 +4,7 @@
 
 ## this is an example of gerge cloony
 
-<img src="https://user-images.githubusercontent.com/104135647/197241115-f8949b8e-85f8-4ecd-be71-0c88901e7498.jpg" width="333" height="333"> <img src="https://user-images.githubusercontent.com/104135647/197238416-1e8d25d1-a523-4ea0-bdd1-ea6c7da88edb.jpeg" width="333" height="333"> <img src="https://user-images.githubusercontent.com/104135647/197238446-e39f18f3-e94f-48e0-970e-77b6d43ab799.jpeg" width="333" height="333">
+<img src="https://user-images.githubusercontent.com/104135647/197241115-f8949b8e-85f8-4ecd-be71-0c88901e7498.jpg" width="333" height="333"> <img src="https://user-images.githubusercontent.com/104135647/197238446-e39f18f3-e94f-48e0-970e-77b6d43ab799.jpeg" width="333" height="333">
 
 
 
@@ -14,3 +14,6 @@
 
 ##### In order to make this work you have to fill the photos directory with your input pictures
 ##### it is already prefilled with random pictures close to greyscale 1 and greyscale 0 in order to tackle corner cases
+
+#### this is a falsly generated picture that still looks pretty interesting
+<img src="https://user-images.githubusercontent.com/104135647/197238416-1e8d25d1-a523-4ea0-bdd1-ea6c7da88edb.jpeg" width="333" height="333">
